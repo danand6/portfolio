@@ -33,6 +33,8 @@ Sampe Response:
     ...
   ]
 }
+```
+
 🛠 Tech Stack
 
 Python (FastAPI, Pandas, NumPy)
