@@ -4,12 +4,42 @@ Hi, I’m Dhruv. Here’s a curated set of projects from research and coursework
 
 ---
 
-## Semantic Job Recommender
-**Stack:** Python, PyTorch, Sentence-BERT, FAISS, Personalized PageRank, PostgreSQL  
-**Repo:** [GitHub – data-mining](https://github.com/KrishnaprasadPA/data-mining)  
-**What I built:** End-to-end recommendation pipeline for 124K+ job postings, combining semantic embeddings with approximate nearest neighbor search (FAISS) and graph-based reranking (Personalized PageRank).  
-**Result:** Achieved **Precision@10 of 0.87**, outperforming TF-IDF and KNN baselines.  
-**Highlights:** Data ingestion, embedding generation, ANN retrieval, reranking, and evaluation harness.
+## 🔍 Job Recommender Service
+[🔗 View Repository](https://github.com/danand6/job-recommender)
+
+A semantic job recommendation engine that helps users discover relevant postings using **natural language queries**. Instead of keyword matching, it leverages **embeddings** and **vector search** to capture semantic meaning.
+
+### ✨ Features
+- **Semantic Search** – powered by [Sentence Transformers](https://www.sbert.net/) for embedding generation.  
+- **Vector Indexing** – built with **FAISS** for fast similarity lookups across thousands of jobs.  
+- **REST API** – clean endpoints built with **FastAPI**.  
+- **Dockerized & Deployed** – packaged into a Docker image and deployed on **AWS App Runner**.  
+- **Demo Dataset** – includes a sample catalog (`catalog_sample.parquet`) so anyone can test locally.
+
+### 🚀 Example Query
+```bash
+curl -X POST https://<your-app-url>/recommend \
+  -H "Content-Type: application/json" \
+  -d '{"query":"machine learning engineer fintech","k":5}'
+Sampe Response:
+{
+  "items": [
+    {
+      "id": 3904724926,
+      "title": "Software Development Engineer, Fintech",
+      "score": 0.664,
+      "url": "https://www.linkedin.com/jobs/view/3904724926/"
+    },
+    ...
+  ]
+}
+🛠 Tech Stack
+
+Python (FastAPI, Pandas, NumPy)
+
+Machine Learning (FAISS, Sentence Transformers)
+
+Infrastructure (Docker, AWS App Runner, S3)
 
 ---
 
