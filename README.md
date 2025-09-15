@@ -35,7 +35,7 @@ Sampe Response:
 }
 ```
 
-🛠 Tech Stack
+### 🛠 Tech Stack
 
 Python (FastAPI, Pandas, NumPy)
 
