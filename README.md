@@ -20,6 +20,7 @@ Hi, I’m Dhruv. Here’s a curated set of projects from research, coursework, a
 curl -X POST https://<your-app-url>/recommend \
   -H "Content-Type: application/json" \
   -d '{"query":"machine learning engineer fintech","k":5}'
+
 # Sample Response
 # {
 #   "items": [
@@ -34,14 +35,14 @@ curl -X POST https://<your-app-url>/recommend \
 # }
 ```
 
-## Fun Projects
-
 ### F1 Visualization (D3.js)
 **Stack:** JavaScript, D3.js, HTML/CSS  
 **Repo:** [GitHub – d3-test-proj](https://github.com/blacklamma/d3-test-proj)  
 **What I built:** Interactive scrollytelling visualizations of Formula 1, including driver performance, constructors, and track evolution using D3.js.  
 **Highlights:** Custom hex map layout, animated line charts, and dynamic lasso selection for stateful interactivity.  
 **Impact:** Designed for storytelling with clear, data-driven visuals tailored to motorsports analytics.
+
+## Fun Projects
 
 ### FPL Toolkit – Video Coding with Codex
 **Stack:** Python, Flask, React (Vite), Retrieval-Augmented Generation, OpenAI API  
