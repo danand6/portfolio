@@ -44,7 +44,7 @@ curl -X POST https://<your-app-url>/recommend \
 
 ## Fun Projects
 
-### FPL Toolkit – Video Coding with Codex
+### FPL Toolkit – Vibe Coding with Codex
 **Stack:** Python, Flask, React (Vite), Retrieval-Augmented Generation, OpenAI API  
 **Repo:** [GitHub – fpl-toolkit-gui](https://github.com/danand6/fpl-toolkit-gui)  
 **What I built:** A browser-based FPL assistant co-built with Codex that blends deterministic stats with an AI chat workflow, featuring chip strategy guidance, fixture-aware projections, and a Vite-powered UI.  
